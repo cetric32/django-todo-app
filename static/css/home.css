@@ -1,0 +1,8 @@
+#contents{
+    text-align: center;
+    padding-top: 20%;
+}
+body{
+    background-image: url('../img/read.jpg');
+    background-clip: content-box;
+}

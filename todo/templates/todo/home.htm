@@ -1,0 +1,22 @@
+{% extends 'base.htm' %}
+
+{% load static %}
+
+{% block custom_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container m-3" >
+        <div class="row">
+            <div class="col">
+                    <div class="text-capitalize lead" id="contents">
+                            <h1 class="text-capitalize">todo - plan yourself!</h1>
+                            <h2>your time matters</h2>
+                            <button class="btn btn-primary btn-lg">Get Started</button>
+                    </div>
+            </div>
+        </div>
+    </div>  
+
+{% endblock %}
