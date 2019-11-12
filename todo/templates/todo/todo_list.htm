@@ -1,0 +1,16 @@
+{% extends 'todo/base.htm' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                    <h1 class="text-capitalize">list of todos</h1>
+                    <div class="list-group">
+                        {% for todo in todos %}
+                            <a href="{% url 'todo:todo_item' todo.id %}" class="list-group-item list-groupitem-active">{{todo}}</a>
+                        {% endfor %}
+                    </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
